@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<style>
+body {
+background-color: red;
+    }
+
+</style>
+<h1>You in HOME</h1>
+
+<div class="container mt-5">
+
+    <h1>Dogs</h1>
+    <div th:each="el:${dogs}">
+        <h3 th:text="${el.name}"/>
+
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
